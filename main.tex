@@ -1,0 +1,33 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\pagenumbering{arabic}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{subfiles}
+
+\title{\LaTeX\ Template}
+\author{Jonathan Freiberger \\
+        jonathan.freiberger@code.berlin}
+\date{Semester}
+
+\begin{document}
+
+\begin{titlepage}
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+\newpage
+\tableofcontents
+\newpage
+
+% +++++++++++++ END OF HEADER ++++++++++++++
+
+\subfile{sections/Introduction}
+\subfile{sections/Conclusion}
+\newpage
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
